@@ -1,0 +1,559 @@
+{
+  "meta" : {
+    "view" : {
+      "id" : "br8p-iseu",
+      "name" : "FY 2023 Pension Recipients by State",
+      "assetType" : "dataset",
+      "averageRating" : 0,
+      "createdAt" : 1713875151,
+      "description" : "This report provides state-level estimates of the number of Veterans who were receiving VA Pension benefits as of the end of fiscal year 2023. It includes the Veterans’ gender. Blank values represent small cell counts that have been suppressed to protect the identity of Veterans as well as some cell counts that have been suppressed in order to prevent the determination of the values of the aforementioned small cell counts. Some categories may not sum to the total due to missing information (e.g., gender, etc.).\n\nThe availability of gender data is limited as some records have no gender available. In the table, there are 123 Veterans whose gender is not available.\n\nThere are a small number of pension recipients for whom neither state nor country could be determined from the data sources used.  These pension recipients are not included in the table.\n\nThe number of Veterans who were pension recipients during FY 2023 but were no longer pension recipients at the end of FY 2023 is 32,176.  These Veterans are not included in the table.\n\nSource: Department of Veterans Affairs, Office of Enterprise Integration, Veteran Object FY23 data and Veterans Benefits Administration VETSNET FY 2023 pension data.\n\nPrepared by National Center for Veterans Analysis & Statistics, www.va.gov/vetdata.",
+      "displayType" : "table",
+      "domainCName" : "www.data.va.gov",
+      "downloadCount" : 4,
+      "hideFromCatalog" : false,
+      "hideFromDataJson" : false,
+      "newBackend" : true,
+      "numberOfComments" : 0,
+      "oid" : 40534715,
+      "provenance" : "official",
+      "publicationAppendEnabled" : false,
+      "publicationDate" : 1713891459,
+      "publicationGroup" : 19506145,
+      "publicationStage" : "published",
+      "rowsUpdatedAt" : 1713891453,
+      "rowsUpdatedBy" : "tree-fm2j",
+      "tableId" : 19506145,
+      "totalTimesRated" : 0,
+      "viewCount" : 33,
+      "viewLastModified" : 1713892042,
+      "viewType" : "tabular",
+      "approvals" : [ {
+        "reviewedAt" : 1713892079,
+        "reviewedAutomatically" : true,
+        "state" : "approved",
+        "submissionId" : 6284922,
+        "submissionObject" : "public_audience_request",
+        "submissionOutcome" : "change_audience",
+        "submittedAt" : 1713892079,
+        "targetAudience" : "public",
+        "workflowId" : 2305,
+        "submissionDetails" : {
+          "permissionType" : "READ"
+        },
+        "submissionOutcomeApplication" : {
+          "endedAt" : 1713892079,
+          "failureCount" : 0,
+          "startedAt" : 1713892079,
+          "status" : "success"
+        },
+        "submitter" : {
+          "id" : "tree-fm2j",
+          "displayName" : "MIKE.SCHWABER@VA.GOV"
+        }
+      }, {
+        "message" : "The `strict_permissions` and `enable_internal_approvals` flags must be on to enable internal approvals.",
+        "state" : "unsubmittable",
+        "targetAudience" : "internal",
+        "workflowId" : 5014
+      } ],
+      "clientContext" : {
+        "clientContextVariables" : [ ],
+        "inheritedVariables" : { }
+      },
+      "columns" : [ {
+        "id" : -1,
+        "name" : "sid",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":sid",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "id",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":id",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "position",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":position",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "created_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":created_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_at",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_at",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "updated_meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":updated_meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : -1,
+        "name" : "meta",
+        "dataTypeName" : "meta_data",
+        "fieldName" : ":meta",
+        "position" : 0,
+        "renderTypeName" : "meta_data",
+        "format" : { },
+        "flags" : [ "hidden" ]
+      }, {
+        "id" : 591867656,
+        "name" : "State",
+        "dataTypeName" : "text",
+        "description" : "",
+        "fieldName" : "state",
+        "position" : 1,
+        "renderTypeName" : "text",
+        "tableColumnId" : 152292245,
+        "cachedContents" : {
+          "non_null" : "54",
+          "largest" : "Wyoming",
+          "null" : "0",
+          "top" : [ {
+            "item" : "Oklahoma",
+            "count" : "1"
+          }, {
+            "item" : "North Carolina",
+            "count" : "1"
+          }, {
+            "item" : "Colorado",
+            "count" : "1"
+          }, {
+            "item" : "Mississippi",
+            "count" : "1"
+          }, {
+            "item" : "Florida",
+            "count" : "1"
+          }, {
+            "item" : "Vermont",
+            "count" : "1"
+          }, {
+            "item" : "Delaware",
+            "count" : "1"
+          }, {
+            "item" : "Nevada",
+            "count" : "1"
+          }, {
+            "item" : "Louisiana",
+            "count" : "1"
+          }, {
+            "item" : "New York",
+            "count" : "1"
+          }, {
+            "item" : "US Territories (excluding Puerto Rico)",
+            "count" : "1"
+          }, {
+            "item" : "West Virginia",
+            "count" : "1"
+          }, {
+            "item" : "South Carolina",
+            "count" : "1"
+          }, {
+            "item" : "New Jersey",
+            "count" : "1"
+          }, {
+            "item" : "New Mexico",
+            "count" : "1"
+          }, {
+            "item" : "Hawaii",
+            "count" : "1"
+          }, {
+            "item" : "Arkansas",
+            "count" : "1"
+          }, {
+            "item" : "Missouri",
+            "count" : "1"
+          }, {
+            "item" : "Connecticut",
+            "count" : "1"
+          }, {
+            "item" : "South Dakota",
+            "count" : "1"
+          } ],
+          "smallest" : "Alabama",
+          "count" : "54",
+          "cardinality" : "54"
+        },
+        "format" : { }
+      }, {
+        "id" : 591867657,
+        "name" : "Total: Pension Recipients",
+        "dataTypeName" : "number",
+        "description" : "",
+        "fieldName" : "total_pension_recipients",
+        "position" : 2,
+        "renderTypeName" : "number",
+        "tableColumnId" : 152292246,
+        "cachedContents" : {
+          "non_null" : "54",
+          "largest" : "14389",
+          "null" : "0",
+          "top" : [ {
+            "item" : "4334",
+            "count" : "1"
+          }, {
+            "item" : "507",
+            "count" : "1"
+          }, {
+            "item" : "2949",
+            "count" : "1"
+          }, {
+            "item" : "1826",
+            "count" : "1"
+          }, {
+            "item" : "327",
+            "count" : "1"
+          }, {
+            "item" : "2341",
+            "count" : "1"
+          }, {
+            "item" : "870",
+            "count" : "1"
+          }, {
+            "item" : "5448",
+            "count" : "1"
+          }, {
+            "item" : "2134",
+            "count" : "1"
+          }, {
+            "item" : "2958",
+            "count" : "1"
+          }, {
+            "item" : "1818",
+            "count" : "1"
+          }, {
+            "item" : "2597",
+            "count" : "1"
+          }, {
+            "item" : "2518",
+            "count" : "1"
+          }, {
+            "item" : "758",
+            "count" : "1"
+          }, {
+            "item" : "1285",
+            "count" : "1"
+          }, {
+            "item" : "448",
+            "count" : "1"
+          }, {
+            "item" : "1753",
+            "count" : "1"
+          }, {
+            "item" : "2158",
+            "count" : "1"
+          }, {
+            "item" : "182",
+            "count" : "1"
+          }, {
+            "item" : "4112",
+            "count" : "1"
+          } ],
+          "smallest" : "73",
+          "count" : "54",
+          "cardinality" : "54"
+        },
+        "format" : {
+          "decimalSeparator" : ".",
+          "groupSeparator" : ","
+        }
+      }, {
+        "id" : 591867658,
+        "name" : "Male",
+        "dataTypeName" : "number",
+        "description" : "",
+        "fieldName" : "male",
+        "position" : 3,
+        "renderTypeName" : "number",
+        "tableColumnId" : 152292247,
+        "cachedContents" : {
+          "non_null" : "50",
+          "largest" : "13728",
+          "null" : "4",
+          "top" : [ {
+            "item" : "2362",
+            "count" : "1"
+          }, {
+            "item" : "1639",
+            "count" : "1"
+          }, {
+            "item" : "656",
+            "count" : "1"
+          }, {
+            "item" : "1215",
+            "count" : "1"
+          }, {
+            "item" : "5813",
+            "count" : "1"
+          }, {
+            "item" : "1749",
+            "count" : "1"
+          }, {
+            "item" : "425",
+            "count" : "1"
+          }, {
+            "item" : "7219",
+            "count" : "1"
+          }, {
+            "item" : "390",
+            "count" : "1"
+          }, {
+            "item" : "1718",
+            "count" : "1"
+          }, {
+            "item" : "1338",
+            "count" : "1"
+          }, {
+            "item" : "867",
+            "count" : "1"
+          }, {
+            "item" : "476",
+            "count" : "1"
+          }, {
+            "item" : "799",
+            "count" : "1"
+          }, {
+            "item" : "1229",
+            "count" : "1"
+          }, {
+            "item" : "831",
+            "count" : "1"
+          }, {
+            "item" : "4746",
+            "count" : "1"
+          }, {
+            "item" : "351",
+            "count" : "1"
+          }, {
+            "item" : "4021",
+            "count" : "1"
+          }, {
+            "item" : "5524",
+            "count" : "1"
+          } ],
+          "smallest" : "169",
+          "count" : "54",
+          "cardinality" : "50"
+        },
+        "format" : {
+          "decimalSeparator" : ".",
+          "groupSeparator" : ","
+        }
+      }, {
+        "id" : 591867659,
+        "name" : "Female",
+        "dataTypeName" : "number",
+        "description" : "",
+        "fieldName" : "female",
+        "position" : 4,
+        "renderTypeName" : "number",
+        "tableColumnId" : 152292248,
+        "cachedContents" : {
+          "non_null" : "50",
+          "largest" : "702",
+          "null" : "4",
+          "top" : [ {
+            "item" : "10",
+            "count" : "2"
+          }, {
+            "item" : "32",
+            "count" : "2"
+          }, {
+            "item" : "82",
+            "count" : "2"
+          }, {
+            "item" : "17",
+            "count" : "1"
+          }, {
+            "item" : "232",
+            "count" : "1"
+          }, {
+            "item" : "244",
+            "count" : "1"
+          }, {
+            "item" : "34",
+            "count" : "1"
+          }, {
+            "item" : "106",
+            "count" : "1"
+          }, {
+            "item" : "39",
+            "count" : "1"
+          }, {
+            "item" : "113",
+            "count" : "1"
+          }, {
+            "item" : "166",
+            "count" : "1"
+          }, {
+            "item" : "164",
+            "count" : "1"
+          }, {
+            "item" : "112",
+            "count" : "1"
+          }, {
+            "item" : "139",
+            "count" : "1"
+          }, {
+            "item" : "18",
+            "count" : "1"
+          }, {
+            "item" : "92",
+            "count" : "1"
+          }, {
+            "item" : "58",
+            "count" : "1"
+          }, {
+            "item" : "327",
+            "count" : "1"
+          }, {
+            "item" : "216",
+            "count" : "1"
+          }, {
+            "item" : "649",
+            "count" : "1"
+          } ],
+          "smallest" : "10",
+          "count" : "54",
+          "cardinality" : "47"
+        },
+        "format" : {
+          "decimalSeparator" : ".",
+          "groupSeparator" : ","
+        }
+      } ],
+      "grants" : [ {
+        "inherited" : false,
+        "type" : "viewer",
+        "flags" : [ "public" ]
+      } ],
+      "metadata" : {
+        "custom_fields" : {
+          "Common Core" : {
+            "Contact Email" : "vancvas@va.gov",
+            "Language" : "English",
+            "Contact Name" : "Mike Schwaber",
+            "Update Frequency" : "R/P1Y",
+            "License" : "https://creativecommons.org/publicdomain/zero/1.0/",
+            "Program Code" : "029:009",
+            "Publisher" : "Department of Veterans Affairs",
+            "Is Quality Data" : "true",
+            "Bureau Code" : "029:00",
+            "VA Organization" : "Office of Enterprise Integration",
+            "Public Access Level" : "public"
+          }
+        },
+        "availableDisplayTypes" : [ "table", "fatrow", "page" ]
+      },
+      "owner" : {
+        "id" : "2jpt-5a7f",
+        "displayName" : "HELENE.RICE@VA.GOV",
+        "screenName" : "HELENE.RICE@VA.GOV",
+        "type" : "interactive",
+        "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+      },
+      "query" : { },
+      "rights" : [ "read" ],
+      "tableAuthor" : {
+        "id" : "2jpt-5a7f",
+        "displayName" : "HELENE.RICE@VA.GOV",
+        "screenName" : "HELENE.RICE@VA.GOV",
+        "type" : "interactive",
+        "flags" : [ "acceptedEula", "mayBeStoriesCoOwner" ]
+      },
+      "tags" : [ "pension", "fy23", "fy 23", "fy2023", "fy 2023", "2023", "state", "fy23 pension", "fy 23 pension", "fy2023 pension", "fy 2023 pension", "2023 pension" ],
+      "flags" : [ "default", "federated", "internalToPublicFederatedView", "ownerMayBeContacted", "restorable", "restorePossibleForType" ]
+    }
+  },
+  "data" : [ [ "row-kmjv.k3ad_msaa", "00000000-0000-0000-5CBF-8D5CCE7289AA", 0, 1713891453, null, 1713891453, null, "{ }", "Alabama", "4112", "3857", "251" ]
+, [ "row-9cvi_97vf_ii9z", "00000000-0000-0000-B4CE-87AC386DC01D", 0, 1713891453, null, 1713891453, null, "{ }", "Alaska", "182", "169", "13" ]
+, [ "row-4v5k~awyw_q4m3", "00000000-0000-0000-DC3E-16ECC0B45AFA", 0, 1713891453, null, 1713891453, null, "{ }", "Arizona", "3619", "3374", "244" ]
+, [ "row-m2xq.i6zx_7rpi", "00000000-0000-0000-42E7-949BFB900ADA", 0, 1713891453, null, 1713891453, null, "{ }", "Arkansas", "2341", "2228", "112" ]
+, [ "row-7dyt~t2h2-2iy6", "00000000-0000-0000-6C8D-BC66A5BE2D3B", 0, 1713891453, null, 1713891453, null, "{ }", "California", "14389", "13728", "649" ]
+, [ "row-ynby.35ct_wuq6", "00000000-0000-0000-11FA-5E80E05B5588", 0, 1713891453, null, 1713891453, null, "{ }", "Colorado", "2158", "2036", "121" ]
+, [ "row-ezcr~6nmg_rvf7", "00000000-0000-0000-6A1B-FF7AFD4960BC", 0, 1713891453, null, 1713891453, null, "{ }", "Connecticut", "920", "867", "50" ]
+, [ "row-pjuu.edhm~vsa5", "00000000-0000-0000-997A-08B855A2B4AB", 0, 1713891453, null, 1713891453, null, "{ }", "Delaware", "251", null, null ]
+, [ "row-iskc_rmz4.dh53", "00000000-0000-0000-7B21-E9FB0B61F650", 0, 1713891453, null, 1713891453, null, "{ }", "District of Columbia", "363", "351", "10" ]
+, [ "row-tde2~zu6t-afix", "00000000-0000-0000-82B5-61EA9984898A", 0, 1713891453, null, 1713891453, null, "{ }", "Florida", "13472", "12758", "702" ]
+, [ "row-7nez_ddcb-u38r", "00000000-0000-0000-B30F-45B88C877DDF", 0, 1713891453, null, 1713891453, null, "{ }", "Georgia", "5448", "5114", "327" ]
+, [ "row-ggkn_dprd~uiwu", "00000000-0000-0000-027E-224DE8D4AE99", 0, 1713891453, null, 1713891453, null, "{ }", "Hawaii", "448", "425", "23" ]
+, [ "row-xita.fpzz~9jjg", "00000000-0000-0000-8F68-26279A4D920D", 0, 1713891453, null, 1713891453, null, "{ }", "Idaho", "870", "810", "58" ]
+, [ "row-k3gb.3qaq~jpwv", "00000000-0000-0000-8699-57AADCD50382", 0, 1713891453, null, 1713891453, null, "{ }", "Illinois", "4334", "4165", "166" ]
+, [ "row-epxh~2vud-wxh3", "00000000-0000-0000-F14C-DFAE58C18601", 0, 1713891453, null, 1713891453, null, "{ }", "Indiana", "2518", "2362", "154" ]
+, [ "row-cq6b_s2i7-9g52", "00000000-0000-0000-119B-246778C9B617", 0, 1713891453, null, 1713891453, null, "{ }", "Iowa", "1420", "1338", "82" ]
+, [ "row-5348_k2g9.sgnu", "00000000-0000-0000-0953-83569C608631", 0, 1713891453, null, 1713891453, null, "{ }", "Kansas", "1277", "1215", "62" ]
+, [ "row-xjiv_yydj_md6e", "00000000-0000-0000-C6D7-55AF9103C048", 0, 1713891453, null, 1713891453, null, "{ }", "Kentucky", "2597", "2456", "139" ]
+, [ "row-fp54~tft7~crkz", "00000000-0000-0000-37A9-075F850E383F", 0, 1713891453, null, 1713891453, null, "{ }", "Louisiana", "3299", "3161", "138" ]
+, [ "row-n9za.dfqx.z4b9", "00000000-0000-0000-38B0-26A15C07A431", 0, 1713891453, null, 1713891453, null, "{ }", "Maine", "838", "799", "39" ]
+, [ "row-gq7b.min2_zabu", "00000000-0000-0000-6A51-42EC7C3AD97B", 0, 1713891453, null, 1713891453, null, "{ }", "Maryland", "1825", "1718", "106" ]
+, [ "row-zutc.8btb-ye85", "00000000-0000-0000-E0D6-DD7C16A875BD", 0, 1713891453, null, 1713891453, null, "{ }", "Massachusetts", "1723", "1630", "92" ]
+, [ "row-tfnt-8v4s_rzh6", "00000000-0000-0000-DDFA-6D7E43C614A7", 0, 1713891453, null, 1713891453, null, "{ }", "Michigan", "4981", "4746", "232" ]
+, [ "row-94hz-akqg.puuw", "00000000-0000-0000-60AE-D26D25EF1E4F", 0, 1713891453, null, 1713891453, null, "{ }", "Minnesota", "1826", "1738", "85" ]
+, [ "row-munc~4bse-a3cq", "00000000-0000-0000-4494-D15068391ED5", 0, 1713891453, null, 1713891453, null, "{ }", "Mississippi", "1844", "1743", "101" ]
+, [ "row-q37v_7wnf.e79m", "00000000-0000-0000-D425-4C2628AA81A0", 0, 1713891453, null, 1713891453, null, "{ }", "Missouri", "3728", "3544", "180" ]
+, [ "row-g85f_s2ui_wa4u", "00000000-0000-0000-EEB5-80404A6C019D", 0, 1713891453, null, 1713891453, null, "{ }", "Montana", "758", "724", "34" ]
+, [ "row-iniy~p7jg.awdz", "00000000-0000-0000-93F3-78105D25A7B8", 0, 1713891453, null, 1713891453, null, "{ }", "Nebraska", "688", "656", "32" ]
+, [ "row-56tj.pb4t~e6n4", "00000000-0000-0000-7273-E77E927C6547", 0, 1713891453, null, 1713891453, null, "{ }", "Nevada", "1753", "1639", "114" ]
+, [ "row-77w3.9q83_irq9", "00000000-0000-0000-786A-5BBE565135DF", 0, 1713891453, null, 1713891453, null, "{ }", "New Hampshire", "423", "390", "33" ]
+, [ "row-82w5-vc3r.avw3", "00000000-0000-0000-8F11-1865B0FD57C5", 0, 1713891453, null, 1713891453, null, "{ }", "New Jersey", "1818", "1749", "63" ]
+, [ "row-wevv_7dyj-j9cs", "00000000-0000-0000-A0BF-0ABFE35D3BD6", 0, 1713891453, null, 1713891453, null, "{ }", "New Mexico", "1356", "1274", "82" ]
+, [ "row-rnih~v7im_4ztd", "00000000-0000-0000-73D5-26F0619C0FAC", 0, 1713891453, null, 1713891453, null, "{ }", "New York", "5760", "5524", "229" ]
+, [ "row-vxu4_73f9_vkpi", "00000000-0000-0000-1273-2F0F13E046CE", 0, 1713891453, null, 1713891453, null, "{ }", "North Carolina", "4283", "4021", "258" ]
+, [ "row-h2ns.c8am-iicy", "00000000-0000-0000-D781-D0A7F753A1F5", 0, 1713891453, null, 1713891453, null, "{ }", "North Dakota", "310", "292", "18" ]
+, [ "row-zg6w_gf7t-pufu", "00000000-0000-0000-656D-A8C588DBD451", 0, 1713891453, null, 1713891453, null, "{ }", "Ohio", "7622", "7219", "401" ]
+, [ "row-nxdy_42qw~bq82", "00000000-0000-0000-1892-DA929537F34D", 0, 1713891453, null, 1713891453, null, "{ }", "Oklahoma", "2134", "2021", "113" ]
+, [ "row-5bch.u95u_jad4", "00000000-0000-0000-2122-7E6983FD0957", 0, 1713891453, null, 1713891453, null, "{ }", "Oregon", "2958", "2795", "162" ]
+, [ "row-6b5r_w538_bkhi", "00000000-0000-0000-EBF6-BA1173F7BDDB", 0, 1713891453, null, 1713891453, null, "{ }", "Pennsylvania", "6111", "5813", "289" ]
+, [ "row-m722.3t29-cc73", "00000000-0000-0000-9E25-09D7E7DF086E", 0, 1713891453, null, 1713891453, null, "{ }", "Rhode Island", "394", "377", "17" ]
+, [ "row-9fef_kvx9~q7iv", "00000000-0000-0000-76FC-ED583BD689BA", 0, 1713891453, null, 1713891453, null, "{ }", "South Carolina", "2949", "2783", "164" ]
+, [ "row-f47h_yaru_gnxr", "00000000-0000-0000-1740-05FF8C9F60EB", 0, 1713891453, null, 1713891453, null, "{ }", "South Dakota", "507", "476", "31" ]
+, [ "row-nc6i.5erf~a674", "00000000-0000-0000-F29A-E7D6A0F99ADF", 0, 1713891453, null, 1713891453, null, "{ }", "Tennessee", "4027", "3810", "216" ]
+, [ "row-rsfe_6dqg~rc83", "00000000-0000-0000-2B6D-2743B3281049", 0, 1713891453, null, 1713891453, null, "{ }", "Texas", "11749", "11067", "669" ]
+, [ "row-nva6_vma8~u4aj", "00000000-0000-0000-2FB8-56CAD0FFBDCA", 0, 1713891453, null, 1713891453, null, "{ }", "Utah", "878", "831", "46" ]
+, [ "row-sty8~pimz~4vca", "00000000-0000-0000-E823-83F1B98A9689", 0, 1713891453, null, 1713891453, null, "{ }", "Vermont", "215", null, null ]
+, [ "row-px82~taic~fdwz", "00000000-0000-0000-6B4C-CD98337E9BB8", 0, 1713891453, null, 1713891453, null, "{ }", "Virginia", "3054", "2861", "187" ]
+, [ "row-qh6z~sv4p.we2n", "00000000-0000-0000-2DE0-108967FC3E2C", 0, 1713891453, null, 1713891453, null, "{ }", "Washington", "3111", "2895", "213" ]
+, [ "row-2fp6-z9rj~c8ms", "00000000-0000-0000-4AF7-5A3D7F915CE4", 0, 1713891453, null, 1713891453, null, "{ }", "West Virginia", "1285", "1229", "55" ]
+, [ "row-w22p-x753_rn7f", "00000000-0000-0000-8BDB-D21477BB44D2", 0, 1713891453, null, 1713891453, null, "{ }", "Wisconsin", "2446", "2322", "122" ]
+, [ "row-it5v.39iy-yxh8", "00000000-0000-0000-7E29-23B624AEA0AC", 0, 1713891453, null, 1713891453, null, "{ }", "Wyoming", "238", "228", "10" ]
+, [ "row-h3hs_hcka-76b8", "00000000-0000-0000-8A4C-56664AA26058", 0, 1713891453, null, 1713891453, null, "{ }", "Puerto Rico", "4031", "3999", "32" ]
+, [ "row-vcnb_bae9~ekp7", "00000000-0000-0000-F4D4-63A4A0CC2299", 0, 1713891453, null, 1713891453, null, "{ }", "US Territories (excluding Puerto Rico)", "73", null, null ]
+, [ "row-t75p.umkd.uu6d", "00000000-0000-0000-A638-1FA628121995", 0, 1713891453, null, 1713891453, null, "{ }", "Other Foreign Countries", "327", null, null ]
+ ]
+}
